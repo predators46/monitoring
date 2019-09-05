@@ -23,3 +23,4 @@ cp ~/monitoring/nginx.conf /etc/nginx/
 service uwsgi restart
 service nginx restart
 }
+monitoring
