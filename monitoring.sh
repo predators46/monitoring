@@ -1,6 +1,6 @@
 #!/bin/bash
 function monitoring () {
-echo "I need to knwo the ip of the server you want to monitor..."
+echo "I need to know the ip of the server you want to monitor..."
 IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 		read -rp "IP address: " -e -i "$IP" IP
 apt-get install -y gcc libgeoip-dev python-virtualenv python-dev geoip-database-extra uwsgi uwsgi-plugin-python geoipupdate
