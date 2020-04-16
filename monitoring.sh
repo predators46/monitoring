@@ -14,7 +14,7 @@ cp openvpn-monitor.conf.example openvpn-monitor.conf
 sed -i "s@host=localhost@host=$IP@g" openvpn-monitor.conf
 sed -i 's@port=5555@port=7505@g' openvpn-monitor.conf
 git clone https://github.com/freetextmike/monitoring.git
-cd ~/monitoring
+
 cp ~/monitoring/openvpn-monitor.ini /etc/uwsgi/apps-available/
 ln -s /etc/uwsgi/apps-available/openvpn-monitor.ini /etc/uwsgi/apps-enabled/
 cp ~/monitoring/monitoring/monitoring.conf /etc/nginx/conf.d/
