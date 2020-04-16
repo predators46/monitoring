@@ -13,14 +13,10 @@ virtualenv .
 pip install -r requirements.txt
 cp openvpn-monitor.conf.example openvpn-monitor.conf
 sed -i "s@host=localhost@host=$IP@g" openvpn-monitor.conf
-sed -i 's@port=5555@port=7505@g' openvpn-monitor.conf
-
-
+sed -i 's@port=5555@port=5555@g' openvpn-monitor.conf
 cp /srv/monitoring/openvpn-monitor.ini /etc/uwsgi/apps-available/
 ln -s /etc/uwsgi/apps-available/openvpn-monitor.ini /etc/uwsgi/apps-enabled/
 cp /srv/monitoring/monitoring.conf /etc/nginx/conf.d/
-
-cp /etc/nginx/conf /etc/nginx/nginx.bak
 cp /srv/monitoring/nginx.conf /etc/nginx/
 mkdir /var/lib/GeoIP
 cp /srv/monitoring/GeoLite2-City.mmdb /var/lib/GeoIP
