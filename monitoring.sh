@@ -20,6 +20,8 @@ cp ~/monitoring/monitoring.conf /etc/nginx/conf.d/
 cp /etc/nginx/module-available/* /etc/nginx/conf.d/
 cp /etc/nginx/nginx/conf /etc/nginx/nginx.bak
 cp ~/monitoring/nginx.conf /etc/nginx/
+mkdir /var/lib/GeoIP
+cp ~/monitoring/GeoLiteCity-2.mmdb /var/lib/GeoIP
 service uwsgi restart
 service nginx restart
 }
