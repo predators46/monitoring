@@ -13,8 +13,8 @@ pip install -r requirements.txt
 cp openvpn-monitor.conf.example openvpn-monitor.conf
 sed -i "s@host=localhost@host=$IP@g" openvpn-monitor.conf
 sed -i 's@port=5555@port=7505@g' openvpn-monitor.conf
-cd ~/monitoring/
-cp openvpn-monitor.ini /etc/uwsgi/apps-available/
+#cd ~/monitoring/
+cp ~/openvpn-monitor.ini /etc/uwsgi/apps-available/
 ln -s /etc/uwsgi/apps-available/openvpn-monitor.ini /etc/uwsgi/apps-enabled/
 cp ~/monitoring/monitoring.conf /etc/nginx/conf.d/
 cp /etc/nginx/module-available/* /etc/nginx/conf.d/
