@@ -5,7 +5,7 @@ IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,
 		read -rp "IP address: " -e -i "$IP" IP
 sudo apt-get install -y gcc unzip libgeoip-dev python-virtualenv python-dev geoip-database-extra uwsgi uwsgi-plugin-python nginx git
 cd /srv
-git clone https://github.com/freetextmike/monitoring.git
+git clone https://github.com/predators46/monitoring.git
 wget https://github.com/furlongm/openvpn-monitor/archive/1.0.0.zip
 unzip 1.0.0.zip
 mv openvpn-monitor-1.0.0 openvpn-monitor
