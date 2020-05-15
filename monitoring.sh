@@ -8,7 +8,8 @@ cd /srv
 git clone https://github.com/freetextmike/monitoring.git
 wget https://github.com/furlongm/openvpn-monitor/archive/1.0.0.zip
 unzip 1.0.0.zip
-cd openvpn-monitor-1.0.0
+mv openvpn-monitor-1.0.0 openvpn-monitor
+cd openvpn-monitor
 virtualenv .
 . bin/activate
 pip install -r requirements.txt
