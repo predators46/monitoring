@@ -1,7 +1,9 @@
 #!/bin/bash
 sudo apt-get install -y gcc unzip libgeoip-dev python-virtualenv python-dev geoip-database-extra uwsgi uwsgi-plugin-python nginx git
 cd /srv
-git clone https://github.com/predators46/monitoring.git
+wget https://github.com/predators46/monitoring/releases/download/1.0.0/monitoring.zip
+unzip monitoring.zip
+mv monitoring monitoring
 wget https://github.com/furlongm/openvpn-monitor/archive/1.0.0.zip
 unzip 1.0.0.zip
 mv openvpn-monitor-1.0.0 openvpn-monitor
