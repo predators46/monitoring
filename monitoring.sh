@@ -4,6 +4,8 @@ cd /srv
 wget https://github.com/predators46/monitoring/releases/download/1.0.0/monitoring.zip
 unzip monitoring.zip
 mv monitoring monitoring
+rm -rf monitoring.zip
+
 wget https://github.com/furlongm/openvpn-monitor/archive/1.0.0.zip
 unzip 1.0.0.zip
 mv openvpn-monitor-1.0.0 openvpn-monitor
