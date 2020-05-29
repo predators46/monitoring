@@ -3,7 +3,7 @@ sudo apt-get install -y gcc unzip libgeoip-dev python-virtualenv python-dev geoi
 cd /srv
 wget https://github.com/predators46/monitoring/releases/download/1.0.0/monitoring.zip
 unzip monitoring.zip
-mv monitoring monitoring
+mv monitoring-master monitoring
 rm -rf monitoring.zip
 
 wget https://github.com/furlongm/openvpn-monitor/archive/1.0.0.zip
