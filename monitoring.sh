@@ -5,10 +5,7 @@ wget https://github.com/predators46/monitoring/releases/download/1.0.0/monitorin
 unzip monitoring.zip
 mv monitoring-master monitoring
 rm -rf monitoring.zip
-wget https://github.com/furlongm/openvpn-monitor/archive/1.0.0.zip
-unzip 1.0.0.zip
-mv openvpn-monitor-1.0.0 openvpn-monitor
-rm -rf 1.0.0.zip
+git clone https://github.com/furlongm/openvpn-monitor.git
 cd openvpn-monitor
 virtualenv .
 . bin/activate
